@@ -29,7 +29,7 @@ button {
    ========================= */
 
 .cabecalho {
-    height: 50px;
+    height: 53px;
     background: white;
 
     display: flex;
@@ -40,7 +40,7 @@ button {
 }
 
 .cabecalho h1 {
-    font-size: 16px;
+    font-size: 17px;
     font-weight: 500;
 }
 
@@ -48,13 +48,13 @@ button {
 /* CONTEÚDO */
 
 .conteudo {
-    padding: 23px 14px 75px;
+    padding: 25px 15px 75px;
 }
 
 .conteudo h2 {
-    font-size: 16px;
+    font-size: 17px;
     font-weight: 600;
-    margin-bottom: 12px;
+    margin-bottom: 13px;
 }
 
 
@@ -62,7 +62,7 @@ button {
 
 .cartao {
     width: 100%;
-    min-height: 92px;
+    min-height: 100px;
 
     background: white;
     border: none;
@@ -71,7 +71,7 @@ button {
     display: flex;
     align-items: center;
 
-    padding: 10px;
+    padding: 11px;
 
     text-align: left;
     cursor: pointer;
@@ -83,8 +83,8 @@ button {
 /* ÍCONE */
 
 .icone {
-    width: 38px;
-    height: 38px;
+    width: 40px;
+    height: 40px;
 
     flex-shrink: 0;
 
@@ -95,14 +95,14 @@ button {
     justify-content: center;
     align-items: center;
 
-    margin-right: 10px;
+    margin-right: 11px;
 
     overflow: hidden;
 }
 
 .icone img {
-    width: 20px;
-    height: 20px;
+    width: 21px;
+    height: 21px;
 
     object-fit: contain;
 }
@@ -116,23 +116,23 @@ button {
 }
 
 .tipo {
-    font-size: 12px;
+    font-size: 13px;
     font-weight: 400;
     color: #222;
-    margin-bottom: 3px;
+    margin-bottom: 4px;
 }
 
 .nome {
-    font-size: 12px;
+    font-size: 13px;
     font-weight: 400;
     line-height: 1.25;
     color: #222;
-    margin-bottom: 3px;
+    margin-bottom: 4px;
 }
 
 .numero {
     color: #666;
-    font-size: 10px;
+    font-size: 11px;
     font-weight: 400;
 }
 
@@ -140,11 +140,11 @@ button {
 /* SETA */
 
 .seta {
-    font-size: 21px;
+    font-size: 22px;
     font-weight: 300;
     color: #555;
 
-    margin-left: 3px;
+    margin-left: 4px;
 }
 
 
@@ -152,9 +152,9 @@ button {
 
 .botaoAdicionar {
     width: 100%;
-    height: 45px;
+    height: 47px;
 
-    margin-top: 15px;
+    margin-top: 16px;
 
     border: 2px solid #315b75;
     border-radius: 8px;
@@ -163,12 +163,12 @@ button {
 
     color: #315b75;
 
-    font-size: 13px;
+    font-size: 14px;
     font-weight: 600;
 }
 
 .botaoAdicionar span {
-    font-size: 19px;
+    font-size: 20px;
     vertical-align: middle;
 }
 
@@ -202,18 +202,18 @@ button {
 
     color: #aaa;
 
-    font-size: 10px;
+    font-size: 11px;
     font-weight: 600;
 }
 
 .menuInferior > div div {
-    font-size: 18px;
+    font-size: 19px;
     margin-bottom: 2px;
 }
 
 .menuInferior > div div img {
-    width: 19px;
-    height: 19px;
+    width: 20px;
+    height: 20px;
 
     object-fit: contain;
 }
@@ -228,7 +228,7 @@ button {
    ========================= */
 
 .cabecalhoDocumento {
-    height: 50px;
+    height: 53px;
 
     background: white;
 
@@ -240,7 +240,7 @@ button {
 }
 
 .cabecalhoDocumento h1 {
-    font-size: 16px;
+    font-size: 17px;
     font-weight: 500;
 }
 
@@ -255,7 +255,7 @@ button {
     border: none;
     background: none;
 
-    font-size: 26px;
+    font-size: 27px;
     font-weight: 300;
 
     color: #444;
@@ -272,14 +272,14 @@ button {
     display: flex;
     align-items: center;
 
-    gap: 10px;
+    gap: 11px;
 
-    font-size: 18px;
+    font-size: 19px;
 }
 
 .acoes img {
-    width: 18px;
-    height: 18px;
+    width: 19px;
+    height: 19px;
 
     object-fit: contain;
 }
@@ -290,7 +290,7 @@ button {
    ========================= */
 
 .abas {
-    height: 40px;
+    height: 41px;
 
     background: white;
 
@@ -306,7 +306,7 @@ button {
 
     background: white;
 
-    font-size: 11px;
+    font-size: 12px;
 
     color: #777;
 
@@ -358,6 +358,7 @@ button {
 .documento img {
     width: 100%;
 
+    /* DEIXEI O RG PEQUENO COMO ESTAVA */
     max-width: 330px;
 
     height: auto;
@@ -377,7 +378,7 @@ button {
 
     color: #777;
 
-    font-size: 8px;
+    font-size: 9px;
 
     padding: 2px 0 62px;
 }
@@ -390,29 +391,29 @@ button {
 @media (max-width: 500px) {
 
     .conteudo {
-        padding: 23px 14px 75px;
+        padding: 25px 15px 75px;
     }
 
     .cartao {
-        min-height: 92px;
-        padding: 10px;
+        min-height: 100px;
+        padding: 11px;
     }
 
     .tipo {
-        font-size: 12px;
+        font-size: 13px;
     }
 
     .nome {
-        font-size: 12px;
+        font-size: 13px;
     }
 
     .numero {
-        font-size: 10px;
+        font-size: 11px;
     }
 
     .botaoAdicionar {
-        height: 45px;
-        font-size: 13px;
+        height: 47px;
+        font-size: 14px;
     }
 
     .documento {
