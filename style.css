@@ -180,7 +180,8 @@ button {
 .menuInferior {
     position: fixed;
 
-    bottom: 0;
+    bottom: 8px;
+
     left: 0;
 
     width: 100%;
@@ -381,6 +382,8 @@ button {
     font-size: 10px;
 
     padding: 3px 0 72px;
+
+    transform: translateY(-18px);
 }
 
 
