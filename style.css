@@ -1,0 +1,364 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family:
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        sans-serif;
+
+    background: #eeeeee;
+    color: #222;
+}
+
+button {
+    font-family: inherit;
+}
+
+.tela {
+    min-height: 100vh;
+    background: #eeeeee;
+}
+
+#telaDocumento {
+    display: none;
+}
+
+
+/* CABEÇALHO */
+
+.cabecalho {
+    height: 78px;
+    background: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-bottom: 1px solid #ddd;
+}
+
+.cabecalho h1 {
+    font-size: 25px;
+    font-weight: 500;
+}
+
+
+/* CONTEÚDO */
+
+.conteudo {
+    padding: 65px 30px 130px;
+}
+
+.conteudo h2 {
+    font-size: 25px;
+    margin-bottom: 24px;
+}
+
+
+/* CARTÃO */
+
+.cartao {
+    width: 100%;
+    min-height: 160px;
+
+    background: white;
+    border: none;
+    border-radius: 10px;
+
+    display: flex;
+    align-items: center;
+
+    padding: 28px;
+
+    text-align: left;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 1px 4px rgba(0, 0, 0, .08);
+}
+
+
+/* CÍRCULO DA BANDEIRA */
+
+.icone {
+    width: 64px;
+    height: 64px;
+
+    border-radius: 50%;
+
+    background: #eeeeee;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-right: 28px;
+
+    overflow: hidden;
+}
+
+
+/* BANDEIRA DE SÃO PAULO */
+
+.icone img {
+    width: 32px;
+    height: 32px;
+
+    object-fit: contain;
+}
+
+
+/* INFORMAÇÕES */
+
+.informacoes {
+    flex: 1;
+}
+
+.tipo {
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+
+.nome {
+    font-size: 21px;
+    margin-bottom: 12px;
+}
+
+.numero {
+    color: #666;
+    font-size: 17px;
+}
+
+.seta {
+    font-size: 42px;
+    color: #555;
+}
+
+
+/* BOTÃO ADICIONAR */
+
+.botaoAdicionar {
+    width: 100%;
+    height: 90px;
+
+    margin-top: 30px;
+
+    border: 2px solid #315b75;
+    border-radius: 12px;
+
+    background: white;
+
+    color: #315b75;
+
+    font-size: 23px;
+    font-weight: 600;
+}
+
+.botaoAdicionar span {
+    font-size: 35px;
+    vertical-align: middle;
+}
+
+
+/* MENU INFERIOR */
+
+.menuInferior {
+    position: fixed;
+
+    bottom: 0;
+    left: 0;
+
+    width: 100%;
+    height: 115px;
+
+    background: white;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    border-top: 1px solid #ddd;
+}
+
+.menuInferior > div {
+    text-align: center;
+
+    color: #aaa;
+
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.menuInferior > div div {
+    font-size: 30px;
+    margin-bottom: 7px;
+}
+
+
+/* ÍCONES DO MENU */
+
+.menuInferior > div div img {
+    width: 30px;
+    height: 30px;
+
+    object-fit: contain;
+}
+
+.menuInferior .menuAtivo {
+    color: #315b75;
+}
+
+
+/* TELA DO DOCUMENTO */
+
+.cabecalhoDocumento {
+    height: 75px;
+
+    background: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+}
+
+.cabecalhoDocumento h1 {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.voltar {
+    position: absolute;
+
+    left: 20px;
+
+    border: none;
+    background: none;
+
+    font-size: 45px;
+
+    color: #444;
+}
+
+.acoes {
+    position: absolute;
+
+    right: 20px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 25px;
+
+    font-size: 27px;
+}
+
+
+/* ÍCONE DE COMPARTILHAR */
+
+.acoes img {
+    width: 27px;
+    height: 27px;
+
+    object-fit: contain;
+}
+
+
+/* ABAS */
+
+.abas {
+    height: 65px;
+
+    background: white;
+
+    display: flex;
+
+    border-bottom: 1px solid #ddd;
+}
+
+.aba {
+    flex: 1;
+
+    border: none;
+
+    background: white;
+
+    font-size: 17px;
+
+    color: #777;
+
+    position: relative;
+}
+
+.aba.ativa {
+    color: #315b75;
+
+    font-weight: 600;
+}
+
+.aba.ativa::after {
+    content: "";
+
+    position: absolute;
+
+    bottom: 0;
+    left: 10%;
+
+    width: 80%;
+    height: 3px;
+
+    background: #315b75;
+}
+
+
+/* IMAGEM DO DOCUMENTO */
+
+.documento {
+    width: 100%;
+
+    min-height:
+        calc(100vh - 220px);
+
+    padding: 25px 15px 10px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: flex-start;
+
+    overflow: hidden;
+}
+
+.documento img {
+    width: 100%;
+
+    max-width: 700px;
+
+    height: auto;
+
+    object-fit: contain;
+
+    border-radius: 3px;
+}
+
+
+/* AVISO */
+
+.aviso {
+    text-align: center;
+
+    color: #777;
+
+    font-size: 11px;
+
+    padding: 5px 0 130px;
+}

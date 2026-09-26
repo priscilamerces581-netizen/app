@@ -1,0 +1,9 @@
+{
+    "name": "RG - Registro Geral",
+    "short_name": "RG",
+    "start_url": "./",
+    "display": "standalone",
+    "background_color": "#eeeeee",
+    "theme_color": "#ffffff",
+    "orientation": "portrait"
+}

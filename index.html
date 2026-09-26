@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>RG - Registro Geral</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+
+    <meta
+        name="apple-mobile-web-app-capable"
+        content="yes"
+    >
+
+    <meta
+        name="apple-mobile-web-app-status-bar-style"
+        content="default"
+    >
+
+    <meta
+        name="apple-mobile-web-app-title"
+        content="RG - Registro Geral"
+    >
+
+</head>
+
+<body>
+
+    <!-- TELA INICIAL -->
+
+    <main id="telaInicial" class="tela">
+
+        <header class="cabecalho">
+
+            <h1>Carteira</h1>
+
+        </header>
+
+
+        <section class="conteudo">
+
+            <h2>Válidas</h2>
+
+            <button
+                class="cartao"
+                onclick="abrirDocumento()"
+            >
+
+                <div class="icone">
+
+                    <img
+                        src="imagens/bandeira-sp.png"
+                        alt="Bandeira de São Paulo"
+                    >
+
+                </div>
+
+
+                <div class="informacoes">
+
+                    <div class="tipo">
+                        RG - Registro Geral
+                    </div>
+
+                    <div class="nome">
+                        PRISCILA NASCIMENTO MERCÊS
+                    </div>
+
+                    <div class="numero">
+                        Número: 58.881.877-X
+                    </div>
+
+                </div>
+
+
+                <div class="seta">
+                    ›
+                </div>
+
+            </button>
+
+
+            <button class="botaoAdicionar">
+
+                <span>＋</span>
+
+                Adicionar carteira
+
+            </button>
+
+        </section>
+
+    </main>
+
+
+    <!-- TELA DO DOCUMENTO -->
+
+    <main
+        id="telaDocumento"
+        class="tela documentoTela"
+    >
+
+        <header class="cabecalhoDocumento">
+
+            <button
+                onclick="voltar()"
+                class="voltar"
+            >
+                ‹
+            </button>
+
+
+            <h1>Carteira</h1>
+
+
+            <div class="acoes">
+
+                <img
+                    src="imagens/icone-compartilhar.png"
+                    alt="Compartilhar"
+                >
+
+                <span>⋮</span>
+
+            </div>
+
+        </header>
+
+
+        <!-- ABAS -->
+
+        <div class="abas">
+
+            <button
+                id="abaFrente"
+                class="aba ativa"
+            >
+                Frente
+            </button>
+
+
+            <button
+                id="abaVerso"
+                class="aba"
+            >
+                Verso
+            </button>
+
+
+            <button
+                id="abaQr"
+                class="aba"
+            >
+                QR Code
+            </button>
+
+        </div>
+
+
+        <!-- DOCUMENTO -->
+
+        <div
+            class="documento"
+            id="documento"
+            ontouchstart="inicioToque(event)"
+            ontouchend="fimToque(event)"
+        >
+
+            <img
+                id="imagemDocumento"
+                src="imagens/frente.jpeg"
+                alt="Documento"
+            >
+
+        </div>
+
+
+        <div class="aviso">
+
+            Ultima atualização em: 25/09/25 - 22:47
+
+        </div>
+
+    </main>
+
+
+    <!-- MENU INFERIOR -->
+
+    <nav class="menuInferior">
+
+        <div class="menuAtivo">
+
+            <div>
+
+                <img
+                    src="imagens/icone-carteira.png"
+                    alt="Carteira"
+                >
+
+            </div>
+
+            <span>Carteira</span>
+
+        </div>
+
+
+        <div>
+
+            <div>
+
+                <img
+                    src="imagens/icone-servicos.png"
+                    alt="Serviços"
+                >
+
+            </div>
+
+            <span>Serviços</span>
+
+        </div>
+
+
+        <div>
+
+            <div>☰</div>
+
+            <span>Opções</span>
+
+        </div>
+
+    </nav>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
