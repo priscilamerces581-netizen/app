@@ -5,12 +5,7 @@
 }
 
 body {
-    font-family:
-        -apple-system,
-        BlinkMacSystemFont,
-        "Segoe UI",
-        sans-serif;
-
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
     background: #eeeeee;
     color: #222;
 }
@@ -29,10 +24,12 @@ button {
 }
 
 
-/* CABEÇALHO */
+/* =========================
+   CABEÇALHO
+========================= */
 
 .cabecalho {
-    height: 78px;
+    height: 65px;
     background: white;
 
     display: flex;
@@ -43,28 +40,33 @@ button {
 }
 
 .cabecalho h1 {
-    font-size: 25px;
+    font-size: 23px;
     font-weight: 500;
 }
 
 
-/* CONTEÚDO */
+/* =========================
+   CONTEÚDO
+========================= */
 
 .conteudo {
-    padding: 65px 30px 130px;
+    padding: 38px 18px 110px;
 }
 
 .conteudo h2 {
-    font-size: 25px;
-    margin-bottom: 24px;
+    font-size: 23px;
+    font-weight: 600;
+    margin-bottom: 20px;
 }
 
 
-/* CARTÃO */
+/* =========================
+   CARTÃO
+========================= */
 
 .cartao {
     width: 100%;
-    min-height: 145px;
+    min-height: 160px;
 
     background: white;
     border: none;
@@ -73,85 +75,96 @@ button {
     display: flex;
     align-items: center;
 
-    padding: 22px;
+    padding: 20px;
 
     text-align: left;
-
     cursor: pointer;
 
-    color: #222;
-    -webkit-appearance: none;
-    appearance: none;
-
-    box-shadow:
-        0 1px 4px rgba(0, 0, 0, .08);
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
 }
 
 
-/* CÍRCULO DA BANDEIRA */
+/* =========================
+   CÍRCULO DA BANDEIRA
+========================= */
 
 .icone {
-    width: 64px;
-    height: 64px;
+    width: 55px;
+    height: 55px;
+
+    flex-shrink: 0;
 
     border-radius: 50%;
-
     background: #eeeeee;
 
     display: flex;
     justify-content: center;
     align-items: center;
 
-    margin-right: 28px;
+    margin-right: 20px;
 
     overflow: hidden;
 }
 
-
-/* BANDEIRA DE SÃO PAULO */
-
 .icone img {
-    width: 32px;
-    height: 32px;
+    width: 28px;
+    height: 28px;
 
     object-fit: contain;
 }
 
 
-/* INFORMAÇÕES */
+/* =========================
+   INFORMAÇÕES
+========================= */
 
 .informacoes {
     flex: 1;
+    min-width: 0;
 }
 
 .tipo {
     font-size: 18px;
-    margin-bottom: 8px;
+    font-weight: 400;
+
+    margin-bottom: 9px;
 }
 
 .nome {
-    font-size: 19px;
-    margin-bottom: 8px;
+    font-size: 18px;
+    font-weight: 400;
+
+    line-height: 1.35;
+
+    margin-bottom: 9px;
+
+    color: #222;
 }
 
 .numero {
     color: #666;
     font-size: 16px;
+    font-weight: 400;
 }
 
 .seta {
-    font-size: 36px;
+    font-size: 35px;
+    font-weight: 300;
     color: #555;
+
+    margin-left: 10px;
 }
 
 
-/* BOTÃO ADICIONAR */
+/* =========================
+   BOTÃO ADICIONAR
+========================= */
 
 .botaoAdicionar {
     width: 100%;
     height: 75px;
 
-    margin-top: 30px;
+    margin-top: 28px;
 
     border: 2px solid #315b75;
     border-radius: 12px;
@@ -165,12 +178,14 @@ button {
 }
 
 .botaoAdicionar span {
-    font-size: 35px;
+    font-size: 30px;
     vertical-align: middle;
 }
 
 
-/* MENU INFERIOR */
+/* =========================
+   MENU INFERIOR
+========================= */
 
 .menuInferior {
     position: fixed;
@@ -179,7 +194,7 @@ button {
     left: 0;
 
     width: 100%;
-    height: 115px;
+    height: 95px;
 
     background: white;
 
@@ -188,6 +203,8 @@ button {
     align-items: center;
 
     border-top: 1px solid #ddd;
+
+    z-index: 10;
 }
 
 .menuInferior > div {
@@ -195,21 +212,23 @@ button {
 
     color: #aaa;
 
-    font-size: 17px;
+    font-size: 15px;
     font-weight: 600;
 }
 
 .menuInferior > div div {
-    font-size: 30px;
-    margin-bottom: 7px;
+    font-size: 27px;
+    margin-bottom: 5px;
 }
 
 
-/* ÍCONES DO MENU */
+/* =========================
+   ÍCONES DO MENU
+========================= */
 
 .menuInferior > div div img {
-    width: 30px;
-    height: 30px;
+    width: 27px;
+    height: 27px;
 
     object-fit: contain;
 }
@@ -219,10 +238,12 @@ button {
 }
 
 
-/* TELA DO DOCUMENTO */
+/* =========================
+   TELA DO DOCUMENTO
+========================= */
 
 .cabecalhoDocumento {
-    height: 75px;
+    height: 65px;
 
     background: white;
 
@@ -234,19 +255,20 @@ button {
 }
 
 .cabecalhoDocumento h1 {
-    font-size: 24px;
+    font-size: 22px;
     font-weight: 500;
 }
 
 .voltar {
     position: absolute;
 
-    left: 20px;
+    left: 16px;
 
     border: none;
     background: none;
 
-    font-size: 45px;
+    font-size: 38px;
+    font-weight: 300;
 
     color: #444;
 }
@@ -254,32 +276,36 @@ button {
 .acoes {
     position: absolute;
 
-    right: 20px;
+    right: 16px;
 
     display: flex;
 
     align-items: center;
 
-    gap: 25px;
+    gap: 20px;
 
-    font-size: 27px;
+    font-size: 24px;
 }
 
 
-/* ÍCONE DE COMPARTILHAR */
+/* =========================
+   COMPARTILHAR
+========================= */
 
 .acoes img {
-    width: 27px;
-    height: 27px;
+    width: 24px;
+    height: 24px;
 
     object-fit: contain;
 }
 
 
-/* ABAS */
+/* =========================
+   ABAS
+========================= */
 
 .abas {
-    height: 65px;
+    height: 58px;
 
     background: white;
 
@@ -295,7 +321,7 @@ button {
 
     background: white;
 
-    font-size: 17px;
+    font-size: 16px;
 
     color: #777;
 
@@ -304,7 +330,6 @@ button {
 
 .aba.ativa {
     color: #315b75;
-
     font-weight: 600;
 }
 
@@ -323,15 +348,16 @@ button {
 }
 
 
-/* IMAGEM DO DOCUMENTO */
+/* =========================
+   IMAGEM DO DOCUMENTO
+========================= */
 
 .documento {
     width: 100%;
 
-    min-height:
-        calc(100vh - 220px);
+    min-height: calc(100vh - 218px);
 
-    padding: 25px 15px 10px;
+    padding: 15px 12px 10px;
 
     display: flex;
 
@@ -345,7 +371,7 @@ button {
 .documento img {
     width: 100%;
 
-    max-width: 700px;
+    max-width: 500px;
 
     height: auto;
 
@@ -355,14 +381,73 @@ button {
 }
 
 
-/* AVISO */
+/* =========================
+   AVISO
+========================= */
 
 .aviso {
     text-align: center;
 
     color: #777;
 
-    font-size: 11px;
+    font-size: 10px;
 
-    padding: 5px 0 130px;
+    padding: 5px 0 110px;
+}
+
+
+/* =========================
+   CELULAR
+========================= */
+
+@media (max-width: 500px) {
+
+    .cabecalho h1 {
+        font-size: 22px;
+    }
+
+    .conteudo {
+        padding: 38px 18px 110px;
+    }
+
+    .conteudo h2 {
+        font-size: 23px;
+    }
+
+    .cartao {
+        min-height: 155px;
+        padding: 18px;
+    }
+
+    .icone {
+        width: 52px;
+        height: 52px;
+        margin-right: 18px;
+    }
+
+    .icone img {
+        width: 27px;
+        height: 27px;
+    }
+
+    .tipo {
+        font-size: 17px;
+    }
+
+    .nome {
+        font-size: 18px;
+    }
+
+    .numero {
+        font-size: 15px;
+    }
+
+    .seta {
+        font-size: 32px;
+    }
+
+    .botaoAdicionar {
+        height: 72px;
+        font-size: 19px;
+    }
 }
