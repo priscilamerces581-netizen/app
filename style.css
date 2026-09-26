@@ -64,7 +64,7 @@ button {
 
 .cartao {
     width: 100%;
-    min-height: 160px;
+    min-height: 145px;
 
     background: white;
     border: none;
@@ -73,11 +73,15 @@ button {
     display: flex;
     align-items: center;
 
-    padding: 28px;
+    padding: 22px;
 
     text-align: left;
 
     cursor: pointer;
+
+    color: #222;
+    -webkit-appearance: none;
+    appearance: none;
 
     box-shadow:
         0 1px 4px rgba(0, 0, 0, .08);
@@ -121,22 +125,22 @@ button {
 }
 
 .tipo {
-    font-size: 20px;
-    margin-bottom: 12px;
+    font-size: 18px;
+    margin-bottom: 8px;
 }
 
 .nome {
-    font-size: 21px;
-    margin-bottom: 12px;
+    font-size: 19px;
+    margin-bottom: 8px;
 }
 
 .numero {
     color: #666;
-    font-size: 17px;
+    font-size: 16px;
 }
 
 .seta {
-    font-size: 42px;
+    font-size: 36px;
     color: #555;
 }
 
@@ -145,7 +149,7 @@ button {
 
 .botaoAdicionar {
     width: 100%;
-    height: 90px;
+    height: 75px;
 
     margin-top: 30px;
 
@@ -156,7 +160,7 @@ button {
 
     color: #315b75;
 
-    font-size: 23px;
+    font-size: 20px;
     font-weight: 600;
 }
 
