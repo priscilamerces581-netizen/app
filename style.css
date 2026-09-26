@@ -29,7 +29,7 @@ button {
    ========================= */
 
 .cabecalho {
-    height: 53px;
+    height: 58px;
     background: white;
 
     display: flex;
@@ -40,7 +40,7 @@ button {
 }
 
 .cabecalho h1 {
-    font-size: 17px;
+    font-size: 19px;
     font-weight: 500;
 }
 
@@ -48,43 +48,43 @@ button {
 /* CONTEÚDO */
 
 .conteudo {
-    padding: 25px 15px 75px;
+    padding: 30px 17px 80px;
 }
 
 .conteudo h2 {
-    font-size: 17px;
+    font-size: 20px;
     font-weight: 600;
-    margin-bottom: 13px;
+    margin-bottom: 15px;
 }
 
 
-/* CARTÃO */
+/* CARTÃO DO RG */
 
 .cartao {
     width: 100%;
-    min-height: 100px;
+    min-height: 125px;
 
     background: white;
     border: none;
-    border-radius: 8px;
+    border-radius: 10px;
 
     display: flex;
     align-items: center;
 
-    padding: 11px;
+    padding: 15px;
 
     text-align: left;
     cursor: pointer;
 
-    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.08);
 }
 
 
 /* ÍCONE */
 
 .icone {
-    width: 40px;
-    height: 40px;
+    width: 48px;
+    height: 48px;
 
     flex-shrink: 0;
 
@@ -95,14 +95,14 @@ button {
     justify-content: center;
     align-items: center;
 
-    margin-right: 11px;
+    margin-right: 14px;
 
     overflow: hidden;
 }
 
 .icone img {
-    width: 21px;
-    height: 21px;
+    width: 25px;
+    height: 25px;
 
     object-fit: contain;
 }
@@ -116,23 +116,23 @@ button {
 }
 
 .tipo {
-    font-size: 13px;
+    font-size: 16px;
     font-weight: 400;
     color: #222;
-    margin-bottom: 4px;
+    margin-bottom: 5px;
 }
 
 .nome {
-    font-size: 13px;
+    font-size: 16px;
     font-weight: 400;
-    line-height: 1.25;
+    line-height: 1.3;
     color: #222;
-    margin-bottom: 4px;
+    margin-bottom: 5px;
 }
 
 .numero {
     color: #666;
-    font-size: 11px;
+    font-size: 13px;
     font-weight: 400;
 }
 
@@ -140,11 +140,11 @@ button {
 /* SETA */
 
 .seta {
-    font-size: 22px;
+    font-size: 27px;
     font-weight: 300;
     color: #555;
 
-    margin-left: 4px;
+    margin-left: 5px;
 }
 
 
@@ -152,23 +152,23 @@ button {
 
 .botaoAdicionar {
     width: 100%;
-    height: 47px;
+    height: 55px;
 
-    margin-top: 16px;
+    margin-top: 19px;
 
     border: 2px solid #315b75;
-    border-radius: 8px;
+    border-radius: 9px;
 
     background: white;
 
     color: #315b75;
 
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 600;
 }
 
 .botaoAdicionar span {
-    font-size: 20px;
+    font-size: 23px;
     vertical-align: middle;
 }
 
@@ -184,7 +184,7 @@ button {
     left: 0;
 
     width: 100%;
-    height: 62px;
+    height: 72px;
 
     background: white;
 
@@ -202,18 +202,18 @@ button {
 
     color: #aaa;
 
-    font-size: 11px;
+    font-size: 13px;
     font-weight: 600;
 }
 
 .menuInferior > div div {
-    font-size: 19px;
-    margin-bottom: 2px;
+    font-size: 22px;
+    margin-bottom: 3px;
 }
 
 .menuInferior > div div img {
-    width: 20px;
-    height: 20px;
+    width: 23px;
+    height: 23px;
 
     object-fit: contain;
 }
@@ -228,7 +228,7 @@ button {
    ========================= */
 
 .cabecalhoDocumento {
-    height: 53px;
+    height: 58px;
 
     background: white;
 
@@ -240,7 +240,7 @@ button {
 }
 
 .cabecalhoDocumento h1 {
-    font-size: 17px;
+    font-size: 19px;
     font-weight: 500;
 }
 
@@ -255,7 +255,7 @@ button {
     border: none;
     background: none;
 
-    font-size: 27px;
+    font-size: 30px;
     font-weight: 300;
 
     color: #444;
@@ -267,30 +267,30 @@ button {
 .acoes {
     position: absolute;
 
-    right: 10px;
+    right: 12px;
 
     display: flex;
     align-items: center;
 
-    gap: 11px;
+    gap: 13px;
 
-    font-size: 19px;
+    font-size: 21px;
 }
 
 .acoes img {
-    width: 19px;
-    height: 19px;
+    width: 21px;
+    height: 21px;
 
     object-fit: contain;
 }
 
 
 /* =========================
-   ABAS
+   ABAS FRENTE / VERSO
    ========================= */
 
 .abas {
-    height: 41px;
+    height: 52px;
 
     background: white;
 
@@ -306,7 +306,7 @@ button {
 
     background: white;
 
-    font-size: 12px;
+    font-size: 15px;
 
     color: #777;
 
@@ -327,7 +327,7 @@ button {
     left: 10%;
 
     width: 80%;
-    height: 2px;
+    height: 3px;
 
     background: #315b75;
 }
@@ -340,7 +340,7 @@ button {
 .documento {
     width: 100%;
 
-    min-height: calc(100vh - 150px);
+    min-height: calc(100vh - 165px);
 
     padding: 5px 15px 0;
 
@@ -358,7 +358,7 @@ button {
 .documento img {
     width: 100%;
 
-    /* DEIXEI O RG PEQUENO COMO ESTAVA */
+    /* RG CONTINUA PEQUENO */
     max-width: 330px;
 
     height: auto;
@@ -378,9 +378,9 @@ button {
 
     color: #777;
 
-    font-size: 9px;
+    font-size: 10px;
 
-    padding: 2px 0 62px;
+    padding: 3px 0 72px;
 }
 
 
@@ -391,29 +391,29 @@ button {
 @media (max-width: 500px) {
 
     .conteudo {
-        padding: 25px 15px 75px;
+        padding: 30px 17px 80px;
     }
 
     .cartao {
-        min-height: 100px;
-        padding: 11px;
+        min-height: 125px;
+        padding: 15px;
     }
 
     .tipo {
-        font-size: 13px;
+        font-size: 16px;
     }
 
     .nome {
-        font-size: 13px;
+        font-size: 16px;
     }
 
     .numero {
-        font-size: 11px;
+        font-size: 13px;
     }
 
     .botaoAdicionar {
-        height: 47px;
-        font-size: 14px;
+        height: 55px;
+        font-size: 16px;
     }
 
     .documento {
