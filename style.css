@@ -24,9 +24,7 @@ button {
 }
 
 
-/* =========================
-   CABEÇALHO
-========================= */
+/* CABEÇALHO */
 
 .cabecalho {
     height: 65px;
@@ -40,33 +38,29 @@ button {
 }
 
 .cabecalho h1 {
-    font-size: 23px;
+    font-size: 18px;
     font-weight: 500;
 }
 
 
-/* =========================
-   CONTEÚDO
-========================= */
+/* CONTEÚDO */
 
 .conteudo {
-    padding: 38px 18px 110px;
+    padding: 35px 18px 105px;
 }
 
 .conteudo h2 {
-    font-size: 23px;
+    font-size: 18px;
     font-weight: 600;
-    margin-bottom: 20px;
+    margin-bottom: 18px;
 }
 
 
-/* =========================
-   CARTÃO
-========================= */
+/* CARTÃO */
 
 .cartao {
     width: 100%;
-    min-height: 160px;
+    min-height: 135px;
 
     background: white;
     border: none;
@@ -75,22 +69,20 @@ button {
     display: flex;
     align-items: center;
 
-    padding: 20px;
+    padding: 16px;
 
     text-align: left;
     cursor: pointer;
 
-    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 1px 4px rgba(0, 0, 0, .08);
 }
 
 
-/* =========================
-   CÍRCULO DA BANDEIRA
-========================= */
+/* ÍCONE */
 
 .icone {
-    width: 55px;
-    height: 55px;
+    width: 52px;
+    height: 52px;
 
     flex-shrink: 0;
 
@@ -101,22 +93,20 @@ button {
     justify-content: center;
     align-items: center;
 
-    margin-right: 20px;
+    margin-right: 16px;
 
     overflow: hidden;
 }
 
 .icone img {
-    width: 28px;
-    height: 28px;
+    width: 27px;
+    height: 27px;
 
     object-fit: contain;
 }
 
 
-/* =========================
-   INFORMAÇÕES
-========================= */
+/* INFORMAÇÕES */
 
 .informacoes {
     flex: 1;
@@ -124,68 +114,59 @@ button {
 }
 
 .tipo {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 400;
-
-    margin-bottom: 9px;
+    margin-bottom: 7px;
 }
 
 .nome {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 400;
-
     line-height: 1.35;
-
-    margin-bottom: 9px;
-
+    margin-bottom: 7px;
     color: #222;
 }
 
 .numero {
     color: #666;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 400;
 }
 
 .seta {
-    font-size: 35px;
+    font-size: 30px;
     font-weight: 300;
     color: #555;
-
-    margin-left: 10px;
+    margin-left: 8px;
 }
 
 
-/* =========================
-   BOTÃO ADICIONAR
-========================= */
+/* BOTÃO ADICIONAR */
 
 .botaoAdicionar {
     width: 100%;
-    height: 75px;
+    height: 65px;
 
-    margin-top: 28px;
+    margin-top: 25px;
 
     border: 2px solid #315b75;
-    border-radius: 12px;
+    border-radius: 10px;
 
     background: white;
 
     color: #315b75;
 
-    font-size: 20px;
+    font-size: 17px;
     font-weight: 600;
 }
 
 .botaoAdicionar span {
-    font-size: 30px;
+    font-size: 26px;
     vertical-align: middle;
 }
 
 
-/* =========================
-   MENU INFERIOR
-========================= */
+/* MENU INFERIOR */
 
 .menuInferior {
     position: fixed;
@@ -194,7 +175,7 @@ button {
     left: 0;
 
     width: 100%;
-    height: 95px;
+    height: 85px;
 
     background: white;
 
@@ -212,23 +193,18 @@ button {
 
     color: #aaa;
 
-    font-size: 15px;
+    font-size: 13px;
     font-weight: 600;
 }
 
 .menuInferior > div div {
-    font-size: 27px;
-    margin-bottom: 5px;
+    font-size: 24px;
+    margin-bottom: 4px;
 }
 
-
-/* =========================
-   ÍCONES DO MENU
-========================= */
-
 .menuInferior > div div img {
-    width: 27px;
-    height: 27px;
+    width: 25px;
+    height: 25px;
 
     object-fit: contain;
 }
@@ -238,12 +214,10 @@ button {
 }
 
 
-/* =========================
-   TELA DO DOCUMENTO
-========================= */
+/* TELA DO DOCUMENTO */
 
 .cabecalhoDocumento {
-    height: 65px;
+    height: 60px;
 
     background: white;
 
@@ -255,19 +229,19 @@ button {
 }
 
 .cabecalhoDocumento h1 {
-    font-size: 22px;
+    font-size: 18px;
     font-weight: 500;
 }
 
 .voltar {
     position: absolute;
 
-    left: 16px;
+    left: 15px;
 
     border: none;
     background: none;
 
-    font-size: 38px;
+    font-size: 32px;
     font-weight: 300;
 
     color: #444;
@@ -276,36 +250,29 @@ button {
 .acoes {
     position: absolute;
 
-    right: 16px;
+    right: 15px;
 
     display: flex;
 
     align-items: center;
 
-    gap: 20px;
+    gap: 16px;
 
-    font-size: 24px;
+    font-size: 22px;
 }
 
-
-/* =========================
-   COMPARTILHAR
-========================= */
-
 .acoes img {
-    width: 24px;
-    height: 24px;
+    width: 22px;
+    height: 22px;
 
     object-fit: contain;
 }
 
 
-/* =========================
-   ABAS
-========================= */
+/* ABAS */
 
 .abas {
-    height: 58px;
+    height: 52px;
 
     background: white;
 
@@ -321,7 +288,7 @@ button {
 
     background: white;
 
-    font-size: 16px;
+    font-size: 14px;
 
     color: #777;
 
@@ -342,22 +309,20 @@ button {
     left: 10%;
 
     width: 80%;
-    height: 3px;
+    height: 2px;
 
     background: #315b75;
 }
 
 
-/* =========================
-   IMAGEM DO DOCUMENTO
-========================= */
+/* IMAGEM DO DOCUMENTO */
 
 .documento {
     width: 100%;
 
-    min-height: calc(100vh - 218px);
+    min-height: calc(100vh - 197px);
 
-    padding: 15px 12px 10px;
+    padding: 12px 10px 8px;
 
     display: flex;
 
@@ -381,73 +346,46 @@ button {
 }
 
 
-/* =========================
-   AVISO
-========================= */
+/* AVISO */
 
 .aviso {
     text-align: center;
 
     color: #777;
 
-    font-size: 10px;
+    font-size: 9px;
 
-    padding: 5px 0 110px;
+    padding: 4px 0 100px;
 }
 
 
-/* =========================
-   CELULAR
-========================= */
+/* CELULAR */
 
 @media (max-width: 500px) {
 
-    .cabecalho h1 {
-        font-size: 22px;
-    }
-
     .conteudo {
-        padding: 38px 18px 110px;
-    }
-
-    .conteudo h2 {
-        font-size: 23px;
+        padding: 35px 18px 105px;
     }
 
     .cartao {
-        min-height: 155px;
-        padding: 18px;
-    }
-
-    .icone {
-        width: 52px;
-        height: 52px;
-        margin-right: 18px;
-    }
-
-    .icone img {
-        width: 27px;
-        height: 27px;
+        min-height: 135px;
+        padding: 16px;
     }
 
     .tipo {
-        font-size: 17px;
+        font-size: 16px;
     }
 
     .nome {
-        font-size: 18px;
+        font-size: 16px;
     }
 
     .numero {
-        font-size: 15px;
-    }
-
-    .seta {
-        font-size: 32px;
+        font-size: 14px;
     }
 
     .botaoAdicionar {
-        height: 72px;
-        font-size: 19px;
+        height: 65px;
+        font-size: 17px;
     }
 }
