@@ -7,6 +7,9 @@ const telaDocumento =
 const imagemDocumento =
     document.getElementById("imagemDocumento");
 
+const documento =
+    document.getElementById("documento");
+
 const abaFrente =
     document.getElementById("abaFrente");
 
@@ -50,6 +53,8 @@ function mostrarFrente() {
     imagemDocumento.src =
         "imagens/frente.jpeg";
 
+    documento.classList.remove("mostrarQr");
+
     abaFrente.classList.add("ativa");
 
     abaVerso.classList.remove("ativa");
@@ -66,6 +71,8 @@ function mostrarVerso() {
     imagemDocumento.src =
         "imagens/verso.jpeg";
 
+    documento.classList.remove("mostrarQr");
+
     abaVerso.classList.add("ativa");
 
     abaFrente.classList.remove("ativa");
@@ -79,8 +86,7 @@ function mostrarVerso() {
 
 function mostrarQr() {
 
-    imagemDocumento.src =
-        "imagens/qrcode.png";
+    documento.classList.add("mostrarQr");
 
     abaQr.classList.add("ativa");
 
