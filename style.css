@@ -1,579 +1,198 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
+const telaInicial =
+    document.getElementById("telaInicial");
 
-body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-    background: #eeeeee;
-    color: #222;
-}
+const telaDocumento =
+    document.getElementById("telaDocumento");
 
-button {
-    font-family: inherit;
-}
+const imagemDocumento =
+    document.getElementById("imagemDocumento");
 
-.tela {
-    min-height: 100vh;
-    background: #eeeeee;
-}
+const documento =
+    document.getElementById("documento");
 
-#telaDocumento {
-    display: none;
-}
+const abaFrente =
+    document.getElementById("abaFrente");
 
+const abaVerso =
+    document.getElementById("abaVerso");
 
-/* =========================
-   PÁGINA INICIAL
-   ========================= */
+const abaQr =
+    document.getElementById("abaQr");
 
-.cabecalho {
-    height: 58px;
-    background: white;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+let toqueInicial = 0;
+let toqueFinal = 0;
 
-    border-bottom: 1px solid #ddd;
-}
 
-.cabecalho h1 {
-    font-size: 19px;
-    font-weight: 500;
-}
+/* ABRIR DOCUMENTO */
 
+function abrirDocumento() {
 
-/* CONTEÚDO */
+    telaInicial.style.display = "none";
 
-.conteudo {
-    padding: 30px 17px 80px;
-}
+    telaDocumento.style.display = "block";
 
-.conteudo h2 {
-    font-size: 20px;
-    font-weight: 600;
-    margin-bottom: 15px;
-}
-
-
-/* CARTÃO DO RG */
-
-.cartao {
-    width: 100%;
-    min-height: 125px;
-
-    background: white;
-    border: none;
-    border-radius: 10px;
-
-    display: flex;
-    align-items: center;
-
-    padding: 15px;
-
-    text-align: left;
-    cursor: pointer;
-
-    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.08);
-}
-
-
-/* ÍCONE */
-
-.icone {
-    width: 48px;
-    height: 48px;
-
-    flex-shrink: 0;
-
-    border-radius: 50%;
-    background: #eeeeee;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    margin-right: 14px;
-
-    overflow: hidden;
-}
-
-.icone img {
-    width: 25px;
-    height: 25px;
-
-    object-fit: contain;
-}
-
-
-/* INFORMAÇÕES */
-
-.informacoes {
-    flex: 1;
-    min-width: 0;
-}
-
-.tipo {
-    font-size: 16px;
-    font-weight: 400;
-    color: #222;
-    margin-bottom: 5px;
-}
-
-.nome {
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 1.3;
-    color: #222;
-    margin-bottom: 5px;
-}
-
-.numero {
-    color: #666;
-    font-size: 13px;
-    font-weight: 400;
-}
-
-
-/* SETA */
-
-.seta {
-    font-size: 27px;
-    font-weight: 300;
-    color: #555;
-
-    margin-left: 5px;
-}
-
-
-/* BOTÃO ADICIONAR */
-
-.botaoAdicionar {
-    width: 100%;
-    height: 55px;
-
-    margin-top: 19px;
-
-    border: 2px solid #315b75;
-    border-radius: 9px;
-
-    background: white;
-
-    color: #315b75;
-
-    font-size: 16px;
-    font-weight: 600;
-}
-
-.botaoAdicionar span {
-    font-size: 23px;
-    vertical-align: middle;
-}
-
-
-/* =========================
-   MENU INFERIOR
-   ========================= */
-
-.menuInferior {
-    position: fixed;
-
-    bottom: 8px;
-
-    left: 0;
-
-    width: 100%;
-    height: 72px;
-
-    background: white;
-
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-
-    border-top: 1px solid #ddd;
-
-    z-index: 10;
-}
-
-.menuInferior > div {
-    text-align: center;
-
-    color: #aaa;
-
-    font-size: 13px;
-    font-weight: 600;
-}
-
-.menuInferior > div div {
-    font-size: 22px;
-    margin-bottom: 3px;
-}
-
-.menuInferior > div div img {
-    width: 23px;
-    height: 23px;
-
-    object-fit: contain;
-}
-
-.menuInferior .menuAtivo {
-    color: #315b75;
-}
-
-
-/* =========================
-   TELA DO DOCUMENTO
-   ========================= */
-
-.cabecalhoDocumento {
-    height: 58px;
-
-    background: white;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    position: relative;
-}
-
-.cabecalhoDocumento h1 {
-    font-size: 19px;
-    font-weight: 500;
 }
 
 
 /* VOLTAR */
 
-.voltar {
-    position: absolute;
+function voltar() {
 
-    left: 10px;
+    telaDocumento.style.display = "none";
 
-    border: none;
-    background: none;
+    telaInicial.style.display = "block";
 
-    font-size: 30px;
-    font-weight: 300;
-
-    color: #444;
 }
 
 
-/* AÇÕES */
+/* MOSTRAR FRENTE */
 
-.acoes {
-    position: absolute;
+function mostrarFrente() {
 
-    right: 12px;
+    imagemDocumento.src =
+        "imagens/frente.jpeg";
 
-    display: flex;
-    align-items: center;
+    documento.classList.remove("mostrarQr");
 
-    gap: 13px;
+    abaFrente.classList.add("ativa");
 
-    font-size: 21px;
-}
+    abaVerso.classList.remove("ativa");
 
-.acoes img {
-    width: 21px;
-    height: 21px;
+    abaQr.classList.remove("ativa");
 
-    object-fit: contain;
 }
 
 
-/* =========================
-   ABAS
-   ========================= */
+/* MOSTRAR VERSO */
 
-.abas {
-    height: 52px;
+function mostrarVerso() {
 
-    background: white;
+    imagemDocumento.src =
+        "imagens/verso.jpeg";
 
-    display: flex;
+    documento.classList.remove("mostrarQr");
 
-    border-bottom: 1px solid #ddd;
-}
+    abaVerso.classList.add("ativa");
 
-.aba {
-    flex: 1;
+    abaFrente.classList.remove("ativa");
 
-    border: none;
+    abaQr.classList.remove("ativa");
 
-    background: white;
-
-    font-size: 15px;
-
-    color: #777;
-
-    position: relative;
-}
-
-.aba.ativa {
-    color: #315b75;
-    font-weight: 600;
-}
-
-.aba.ativa::after {
-    content: "";
-
-    position: absolute;
-
-    bottom: 0;
-    left: 10%;
-
-    width: 80%;
-    height: 3px;
-
-    background: #315b75;
 }
 
 
-/* =========================
-   DOCUMENTO / FOTO
-   ========================= */
+/* MOSTRAR QR CODE */
 
-.documento {
-    width: 100%;
+function mostrarQr() {
 
-    min-height: calc(100vh - 165px);
+    documento.classList.add("mostrarQr");
 
-    padding: 5px 15px 0;
+    abaQr.classList.add("ativa");
 
-    display: flex;
+    abaFrente.classList.remove("ativa");
 
-    flex-direction: column;
+    abaVerso.classList.remove("ativa");
 
-    justify-content: flex-start;
-
-    align-items: center;
-
-    overflow: hidden;
-}
-
-.documento > #imagemDocumento {
-    width: 100%;
-
-    max-width: 330px;
-
-    height: auto;
-
-    object-fit: contain;
-
-    border-radius: 2px;
 }
 
 
-/* =========================
-   QR CODE
-   ========================= */
+/* CLIQUE NAS ABAS */
 
-.areaQr {
-    display: none;
+abaFrente.addEventListener(
+    "click",
+    mostrarFrente
+);
 
-    width: 100%;
-    max-width: 470px;
+abaVerso.addEventListener(
+    "click",
+    mostrarVerso
+);
 
-    padding: 12px 16px 90px;
+abaQr.addEventListener(
+    "click",
+    mostrarQr
+);
 
-    text-align: center;
-}
 
-.qrCaixa {
-    background: white;
+/* COMEÇO DO DESLIZE */
 
-    border-radius: 12px;
+function inicioToque(event) {
 
-    padding: 25px 18px 20px;
+    toqueInicial =
+        event.changedTouches[0].screenX;
 
-    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.06);
-}
-
-.qrImagem {
-    width: 100%;
-    max-width: 330px;
-
-    height: auto;
-
-    display: block;
-
-    margin: 0 auto 18px;
-}
-
-.barraQr {
-    width: 100%;
-
-    height: 4px;
-
-    background: #ddd;
-
-    overflow: hidden;
-
-    margin-top: 5px;
-}
-
-.progressoQr {
-    width: 12%;
-
-    height: 4px;
-
-    background: #315b75;
-}
-
-.tempoQr {
-    color: #555;
-
-    font-size: 13px;
-
-    margin-top: 9px;
 }
 
 
-/* =========================
-   MUDANÇA: CAIXA AZUL
-   ========================= */
+/* FIM DO DESLIZE */
 
-.avisoQr {
-    display: flex;
+function fimToque(event) {
 
-    align-items: center;
+    toqueFinal =
+        event.changedTouches[0].screenX;
 
-    gap: 10px;
-
-    margin-top: 16px;
-
-    padding: 13px;
-
-    border: 1px solid #315b75;
-
-    border-radius: 10px;
-
-    background: #315b75;
-
-    color: white;
-
-    font-size: 13px;
-
-    text-align: left;
-}
+    const distancia =
+        toqueFinal - toqueInicial;
 
 
-/* MUDANÇA: LÂMPADA BRANCA */
+    if (Math.abs(distancia) < 50) {
 
-.lampada {
-    font-size: 23px;
+        return;
 
-    color: white;
-
-    flex-shrink: 0;
-}
-
-
-/* MODELO ESCOLAR */
-
-.modeloEscolar {
-    margin-top: 10px;
-
-    color: #315b75;
-
-    font-size: 11px;
-
-    font-weight: 700;
-
-    letter-spacing: 0.5px;
-}
-
-
-/* MUDANÇA:
-   A .atualizacaoQr FOI REMOVIDA.
-   Agora existe somente a atualização original
-   na parte inferior da tela.
-*/
-
-
-/* QUANDO QR ESTÁ ABERTO */
-
-.documento.mostrarQr #imagemDocumento {
-    display: none;
-}
-
-.documento.mostrarQr .areaQr {
-    display: block;
-}
-
-
-/* =========================
-   ÚLTIMA ATUALIZAÇÃO
-   ========================= */
-
-.aviso {
-    text-align: center;
-
-    color: #777;
-
-    font-size: 10px;
-
-    padding: 3px 0 72px;
-
-    transform: translateY(-18px);
-}
-
-
-/* =========================
-   CELULAR
-   ========================= */
-
-@media (max-width: 500px) {
-
-    .conteudo {
-        padding: 30px 17px 80px;
     }
 
-    .cartao {
-        min-height: 125px;
-        padding: 15px;
+
+    if (distancia < 0) {
+
+        if (abaFrente.classList.contains("ativa")) {
+
+            mostrarVerso();
+
+        } else if (abaVerso.classList.contains("ativa")) {
+
+            mostrarQr();
+
+        }
+
+    } else {
+
+        if (abaQr.classList.contains("ativa")) {
+
+            mostrarVerso();
+
+        } else if (abaVerso.classList.contains("ativa")) {
+
+            mostrarFrente();
+
+        }
+
     }
 
-    .tipo {
-        font-size: 16px;
-    }
+}
 
-    .nome {
-        font-size: 16px;
-    }
 
-    .numero {
-        font-size: 13px;
-    }
+/* SERVICE WORKER */
 
-    .botaoAdicionar {
-        height: 55px;
-        font-size: 16px;
-    }
+if ("serviceWorker" in navigator) {
 
-    .documento {
-        padding: 5px 15px 0;
-    }
+    window.addEventListener(
+        "load",
+        () => {
 
-    .documento > #imagemDocumento {
-        max-width: 330px;
-    }
+            navigator.serviceWorker
+                .register("sw.js")
 
-    .areaQr {
-        padding-left: 10px;
-        padding-right: 10px;
-    }
+                .catch(error => {
 
-    .qrImagem {
-        max-width: 330px;
-    }
+                    console.log(
+                        "Erro no Service Worker:",
+                        error
+                    );
 
-    .menuInferior {
-        height: 76px;
-    }
+                });
+
+        }
+    );
+
 }
