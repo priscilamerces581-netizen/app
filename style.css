@@ -429,7 +429,7 @@ button {
 
 
 /* =========================
-   AVISO ABAIXO DO QR
+   AVISO DA LÂMPADA
    ========================= */
 
 .avisoQr {
@@ -445,8 +445,10 @@ button {
 
     border-radius: 8px;
 
-    background: #e8f1f6;
+    /* FUNDO CLARO */
+    background: #f4f7f9;
 
+    /* TEXTO AZUL */
     color: #315b75;
 
     font-size: 12px;
