@@ -115,7 +115,7 @@ abaQr.addEventListener(
 );
 
 
-/* COMEÇO DO DESLIZE */
+/* DESLIZAR PARA O LADO */
 
 function inicioToque(event) {
 
@@ -124,8 +124,6 @@ function inicioToque(event) {
 
 }
 
-
-/* FIM DO DESLIZE */
 
 function fimToque(event) {
 
@@ -137,9 +135,7 @@ function fimToque(event) {
 
 
     if (Math.abs(distancia) < 50) {
-
         return;
-
     }
 
 
@@ -182,7 +178,6 @@ if ("serviceWorker" in navigator) {
 
             navigator.serviceWorker
                 .register("sw.js")
-
                 .catch(error => {
 
                     console.log(
