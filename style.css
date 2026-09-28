@@ -44,6 +44,9 @@ button {
     font-weight: 500;
 }
 
+
+/* CONTEÚDO */
+
 .conteudo {
     padding: 30px 17px 80px;
 }
@@ -55,7 +58,7 @@ button {
 }
 
 
-/* CARTÃO */
+/* CARTÃO DO RG */
 
 .cartao {
     width: 100%;
@@ -332,7 +335,7 @@ button {
 
 
 /* =========================
-   DOCUMENTO
+   DOCUMENTO / FOTO
    ========================= */
 
 .documento {
@@ -430,6 +433,11 @@ button {
     margin-top: 9px;
 }
 
+
+/* =========================
+   MUDANÇA: CAIXA AZUL
+   ========================= */
+
 .avisoQr {
     display: flex;
 
@@ -441,24 +449,32 @@ button {
 
     padding: 13px;
 
-    border: 1px solid #8da8df;
+    border: 1px solid #315b75;
 
     border-radius: 10px;
 
-    background: white;
+    background: #315b75;
 
-    color: #666;
+    color: white;
 
     font-size: 13px;
 
     text-align: left;
 }
 
+
+/* MUDANÇA: LÂMPADA BRANCA */
+
 .lampada {
     font-size: 23px;
 
-    color: #315b75;
+    color: white;
+
+    flex-shrink: 0;
 }
+
+
+/* MODELO ESCOLAR */
 
 .modeloEscolar {
     margin-top: 10px;
@@ -472,15 +488,12 @@ button {
     letter-spacing: 0.5px;
 }
 
-.atualizacaoQr {
-    margin-top: 10px;
 
-    color: #777;
-
-    font-size: 11px;
-
-    text-align: center;
-}
+/* MUDANÇA:
+   A .atualizacaoQr FOI REMOVIDA.
+   Agora existe somente a atualização original
+   na parte inferior da tela.
+*/
 
 
 /* QUANDO QR ESTÁ ABERTO */
